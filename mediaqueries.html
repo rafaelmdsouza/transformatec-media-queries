@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body { 
+            background-color: lightblue;    
+            font-family: sans-serif;
+            color: black
+        }
+        
+        
+           /* Intervalo de resolução e largura */
+        @media only screen and (min-width: 400px) and (max-width: 600px) {
+            body {
+            background-color: bisque
+            }
+            p { 
+                color: red
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 768px){
+            body {
+                background-color: purple
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p>Parágrafo dentro da div que será utilizado com Media Queries</p>
+    </div>
+</body>
+</html>

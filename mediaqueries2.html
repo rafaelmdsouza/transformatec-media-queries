@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query 2</title>
+    <style>
+        .container{
+            margin:auto;
+            background:#ceceffff;
+            box-sizing: border-box;
+        }
+
+        /* Dimensões para Mobile */
+        @media screen and (max-width:768px){
+            .container{
+                background-color: blue;
+                color:red;
+            }
+        }
+
+        /* Dimensões para tablets */
+        @media screen and (min-width:768px) and (max-width:1023px){
+            .container{
+                background-color: green;
+                color: whitesmoke;
+            }
+        }
+
+        /* Dimensões para desktop */
+        @media screen and (min-width:1024px){
+            .container{
+                background-color: red;
+                color: whitesmoke;
+            }
+        }
+
+        /* Dimensões para desktop alta resolução */
+        @media screen and (min-width:1280px){
+            .container{
+                background-color: yellow;
+                color: whitesmoke;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Texto do parágrafo</p>
+    </div>
+</body>
+</html>
